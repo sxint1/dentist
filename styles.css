@@ -31,7 +31,6 @@ nav { display: flex; order: 3; flex-basis: 100%; flex-wrap: wrap; gap: .4rem 1.3
 nav a { display: inline-flex; align-items: center; min-height: 2.75rem; font-size: .94rem; }
 nav a:hover { text-decoration: underline; text-underline-offset: .3em; }
 .menu { border: 1px solid var(--line); border-radius: 99rem; min-height: 2.75rem; padding: .5rem .9rem; color: var(--ink); background: transparent; cursor: pointer; }
-.header-cta.button { display: none; }
 .hero { display: grid; gap: .65rem; margin-block-start: .9rem; }
 .hero-copy, .hero-media { border-radius: 1.6rem; }
 .hero-copy { background: var(--lilac); padding: clamp(1.25rem, 4.5vw, 4.75rem); display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: clamp(1.3rem, 2.6vw, 2.25rem); }
@@ -46,8 +45,6 @@ em { font-weight: inherit; }
 .button { display: inline-flex; align-items: center; justify-content: center; font-size: .95rem; font-weight: 700; line-height: 1.25; min-height: 3rem; padding: .7rem clamp(.85rem, 1.7vw, 1.45rem); border-radius: 99rem; border: 1px solid transparent; transition: background-color .2s ease, transform .2s ease, box-shadow .2s ease; }
 .primary { background: var(--olive); color: var(--ink); }
 .primary:hover { background: #e6f0bb; box-shadow: 0 .25rem 1rem #20251520; }
-.outline { border-color: currentColor; }
-.outline:hover { background: #ffffff40; }
 .button:hover { transform: translateY(-2px); }
 .button:active { transform: translateY(0); }
 .hero-media { position: relative; min-width: 0; overflow: hidden; background: #ccc0d5; aspect-ratio: 1.12; }
@@ -86,7 +83,6 @@ em { font-weight: inherit; }
 .contact-card { background: #353a2e; border-radius: 1.25rem; padding: clamp(1.2rem, 3vw, 2.4rem); }
 .contact-card p { color: #e0e2d7; }
 .contact-card .actions { margin-top: 1.2rem; }
-.contact-status:empty { display: none; }
 .footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1.5rem; }
 .footer p { color: var(--muted); font-size: .9rem; }
 @media (min-width: 38rem) {
@@ -95,8 +91,6 @@ em { font-weight: inherit; }
 @media (min-width: 52rem) {
   .menu { display: none; }
   nav, nav[hidden] { display: flex !important; order: 0; flex-basis: auto; justify-content: center; }
-  .header-cta.button { display: inline-flex; border-color: var(--line); }
-  .header-cta:hover { background: var(--olive); }
   .hero { grid-template-columns: 1.15fr 1fr; }
   .hero-media { aspect-ratio: auto; min-height: clamp(28rem, 43vw, 41rem); }
   .hero-media img { position: absolute; inset: 0; }
